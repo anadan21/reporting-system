@@ -36,7 +36,7 @@ export default function Dashboard() {
                         <h1 className="text-3xl font-bold text-gray-900">Dashboard Panel Admin IT</h1>
                         <p className="text-sm text-gray-500 mt-1">Manajemen data laporan kendala</p>
                     </div>
-                    <button onClick={() => { localStorage.clear(); window.location.href = '/admin/login'; }} className="px-4 py-2 bg-red-600 text-white rounded-md text-sm font-medium hover:bg-red-700">
+                    <button onClick={() => { localStorage.clear(); window.location.href = '/admin/login'; }} className="px-6 py-2.5 bg-error text-white rounded-standard font-button hover:bg-red-700 transition-all shadow-subtle">
                         Logout
                     </button>
                 </div>

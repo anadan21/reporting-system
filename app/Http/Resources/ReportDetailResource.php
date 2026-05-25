@@ -20,7 +20,7 @@ class ReportDetailResource extends JsonResource
             'title'           => $this->title,
             'description'     => $this->description,
             'attachment_url'  => $this->attachment_path
-                                    ? asset('storage/' . $this->attachment_path)
+                                    ? ('/storage/' . $this->attachment_path)
                                     : null,
             'status'          => $this->status->value,
             'status_label'    => $this->status->label(),

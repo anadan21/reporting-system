@@ -25,7 +25,7 @@ return [
     'allowed_methods' => ['*'],
 
     // Hanya mengizinkan request datang dari frontend Vite/React/Vue Anda
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => ['http://localhost:5173', 'http://localhost:5175'],
 
     'allowed_origins_patterns' => [],
 

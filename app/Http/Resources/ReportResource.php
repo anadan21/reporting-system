@@ -19,6 +19,7 @@ class ReportResource extends JsonResource
             
             'title'         => $this->title,
             'description'   => $this->description, // Ditambahkan agar halaman detail bisa membaca isinya
+            'attachment_url' => $this->attachment_path ? ('/storage/' . $this->attachment_path) : null,
             'status'        => $this->status->value,
             'status_label'  => $this->status->label(),
             'status_color'  => $this->status->color(),

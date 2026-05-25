@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #F6F5F4;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Custom Utility Classes for Notion Design System === */
+.rounded-card {
+  border-radius: 12px;
+}
+.rounded-standard {
+  border-radius: 8px;
+}
+.rounded-pill {
+  border-radius: 1000px;
+}
+.shadow-subtle {
+  box-shadow: 0px 0.667px 3.502px 0px rgba(0,0,0,0.01), 0px 2.933px 7.252px 0px rgba(0,0,0,0.016), 0px 7.2px 14.462px 0px rgba(0,0,0,0.02), 0px 13.867px 28.348px 0px rgba(0,0,0,0.024), 0px 23.333px 52.123px 0px rgba(0,0,0,0.03), 0px 36px 89px 0px rgba(0,0,0,0.04);
+}
+.shadow-dropdown {
+  box-shadow: 0px 0.175px 1.041px 0px rgba(0,0,0,0.01), 0px 0.8px 2.925px 0px rgba(0,0,0,0.02), 0px 2.025px 7.847px 0px rgba(0,0,0,0.027), 0px 4px 18px 0px rgba(0,0,0,0.04);
+}
+.font-h1 { font-size: 64px; font-weight: 700; line-height: 64px; }
+.font-h2 { font-size: 48px; font-weight: 700; line-height: 56px; }
+.font-h3 { font-size: 32px; font-weight: 700; line-height: 40px; }
+.font-h4 { font-size: 24px; font-weight: 700; line-height: 32px; }
+.font-h5 { font-size: 18px; font-weight: 600; line-height: 28px; }
+.font-subheading { font-size: 16px; font-weight: 600; line-height: 24px; }
+.font-body { font-size: 16px; font-weight: 400; line-height: 24px; }
+.font-body-small { font-size: 14px; font-weight: 400; line-height: 20px; }
+.font-button { font-size: 16px; font-weight: 500; line-height: 24px; }
+.font-caption { font-size: 12px; font-weight: 500; line-height: 16px; }
+.font-code { font-size: 14px; font-weight: 400; line-height: 20px; font-family: monospace; }
+
+/* Kustomisasi scrollbar halus ala Notion */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F5F4;
+}
+::-webkit-scrollbar-thumb {
+  background: #E3E2E0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D3D2D1;
+}
