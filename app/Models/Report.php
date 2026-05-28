@@ -11,6 +11,7 @@ class Report extends Model
     use HasFactory;
 
     protected $fillable = [
+        'ticket',
         'reporter_name',
         'reporter_email',
         'reporter_phone',

@@ -51,7 +51,7 @@ class ReportController extends Controller
         $report->title           = $request->title;
         $report->description     = $request->description;
         $report->attachment_path = $attachmentPath;
-        $report->status          = 'open';
+        $report->status          = \App\Enums\ReportStatusEnum::Open;
         $report->save();
 
         // 3. Amankan pengiriman email agar jika mailer local error, server TIDAK crash 500!
